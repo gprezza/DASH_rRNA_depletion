@@ -5,7 +5,6 @@ Python tool to design sgRNA pools targeting the rRNA genes.
 These Python (3.x) packages are required to run th the script:
 
 * Bio
-* gffutils
 * primer3-py
 
 You'll also need to have [Bowtie](http://bowtie-bio.sourceforge.net/index.shtml) installed.
