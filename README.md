@@ -2,7 +2,7 @@
 Python tool to design sgRNA pools targeting the rRNA genes.
 
 ## Dependencies
-These Python (3.x) packages are required to run th the script:
+These Python (3.x) packages are required to run the script:
 
 * Bio
 * primer3-py
