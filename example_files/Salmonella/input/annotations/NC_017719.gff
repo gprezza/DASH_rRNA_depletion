@@ -1,0 +1,31 @@
+##gff-version 3
+#!gff-spec-version 1.20
+#!processor NCBI annotwriter
+##sequence-region NC_017719.1 1 8688
+##species http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=216597
+NC_017719.1	RefSeq	region	1	8688	.	+	.	ID=id0;Dbxref=taxon:216597;Is_circular=true;gbkey=Src;genome=plasmid;mol_type=genomic DNA;plasmid-name=pRSF1010_SL1344;serovar=Typhimurium;strain=SL1344
+NC_017719.1	RefSeq	gene	27	842	.	-	.	ID=gene0;Name=sulII;gbkey=Gene;gene=sulII;locus_tag=SL1344_P3_0001
+NC_017719.1	RefSeq	CDS	27	842	.	-	0	ID=cds0;Name=YP_006203624.1;Parent=gene0;Dbxref=Genbank:YP_006203624.1;gbkey=CDS;product=dihydropteroate synthase type-2 %28dihydropteroate synthase type ii%29 %28dhps%29 %28dihydropteroate pyrophosphorylase type ii%29;protein_id=YP_006203624.1;transl_table=11
+NC_017719.1	RefSeq	gene	851	1075	.	-	.	ID=gene1;Name=SL1344_P3_0002;gbkey=Gene;locus_tag=SL1344_P3_0002;partial=true
+NC_017719.1	RefSeq	CDS	851	1075	.	-	0	ID=cds1;Name=YP_006203625.1;Parent=gene1;Dbxref=Genbank:YP_006203625.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203625.1;transl_table=11
+NC_017719.1	RefSeq	gene	1150	1998	.	-	.	ID=gene2;Name=repC;gbkey=Gene;gene=repC;locus_tag=SL1344_P3_0003
+NC_017719.1	RefSeq	CDS	1150	1998	.	-	0	ID=cds2;Name=YP_006203626.1;Parent=gene2;Dbxref=Genbank:YP_006203626.1;gbkey=CDS;product=replication protein c;protein_id=YP_006203626.1;transl_table=11
+NC_017719.1	RefSeq	gene	1988	2827	.	-	.	ID=gene3;Name=repA;gbkey=Gene;gene=repA;locus_tag=SL1344_P3_0004
+NC_017719.1	RefSeq	CDS	1988	2827	.	-	0	ID=cds3;Name=YP_006203627.1;Parent=gene3;Dbxref=Genbank:YP_006203627.1;gbkey=CDS;product=regulatory protein;protein_id=YP_006203627.1;transl_table=11
+NC_017719.1	RefSeq	gene	2857	3063	.	-	.	ID=gene4;Name=SL1344_P3_0005;gbkey=Gene;locus_tag=SL1344_P3_0005
+NC_017719.1	RefSeq	CDS	2857	3063	.	-	0	ID=cds4;Name=YP_006203628.1;Parent=gene4;Dbxref=Genbank:YP_006203628.1;gbkey=CDS;product=repressor protein;protein_id=YP_006203628.1;transl_table=11
+NC_017719.1	RefSeq	gene	3065	3277	.	-	.	ID=gene5;Name=SL1344_P3_0006;gbkey=Gene;locus_tag=SL1344_P3_0006
+NC_017719.1	RefSeq	CDS	3065	3277	.	-	0	ID=cds5;Name=YP_006203629.1;Parent=gene5;Dbxref=Genbank:YP_006203629.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203629.1;transl_table=11
+NC_017719.1	RefSeq	gene	3338	5467	.	-	.	ID=gene6;Name=mobA;gbkey=Gene;gene=mobA;locus_tag=SL1344_P3_0008
+NC_017719.1	RefSeq	CDS	3338	5467	.	-	0	ID=cds6;Name=YP_006203630.1;Parent=gene6;Dbxref=Genbank:YP_006203630.1;gbkey=CDS;product=mobilization protein;protein_id=YP_006203630.1;transl_table=11
+NC_017719.1	RefSeq	gene	4306	4719	.	-	.	ID=gene7;Name=mobB;gbkey=Gene;gene=mobB;locus_tag=SL1344_P3_0009
+NC_017719.1	RefSeq	CDS	4306	4719	.	-	0	ID=cds7;Name=YP_006203631.1;Parent=gene7;Dbxref=Genbank:YP_006203631.1;gbkey=CDS;product=mobilization protein;protein_id=YP_006203631.1;transl_table=11
+NC_017719.1	RefSeq	gene	5666	5950	.	+	.	ID=gene8;Name=mobC;gbkey=Gene;gene=mobC;locus_tag=SL1344_P3_0011
+NC_017719.1	RefSeq	CDS	5666	5950	.	+	0	ID=cds8;Name=YP_006203632.1;Parent=gene8;Dbxref=Genbank:YP_006203632.1;gbkey=CDS;product=mobilization protein c;protein_id=YP_006203632.1;transl_table=11
+NC_017719.1	RefSeq	gene	6504	7043	.	+	.	ID=gene9;Name=SL1344_P3_0012;gbkey=Gene;locus_tag=SL1344_P3_0012
+NC_017719.1	RefSeq	CDS	6504	7043	.	+	0	ID=cds9;Name=YP_006203633.1;Parent=gene9;Dbxref=Genbank:YP_006203633.1;gbkey=CDS;product=putative transposase%2Frecombinase;protein_id=YP_006203633.1;transl_table=11
+NC_017719.1	RefSeq	gene	7015	7860	.	-	.	ID=gene10;Name=strB;gbkey=Gene;gene=strB;locus_tag=SL1344_P3_0013
+NC_017719.1	RefSeq	CDS	7015	7860	.	-	0	ID=cds10;Name=YP_006203634.1;Parent=gene10;Dbxref=Genbank:YP_006203634.1;gbkey=CDS;product=streptomycin 3%27%27-kinase;protein_id=YP_006203634.1;transl_table=11
+NC_017719.1	RefSeq	gene	7851	8654	.	-	.	ID=gene11;Name=aph%283%27%27%29-Ib;gbkey=Gene;gene=aph%283%27%27%29-Ib;locus_tag=SL1344_P3_0014
+NC_017719.1	RefSeq	CDS	7851	8654	.	-	0	ID=cds11;Name=YP_006203635.1;Parent=gene11;Dbxref=Genbank:YP_006203635.1;gbkey=CDS;product=aminoglycoside phosphotransferase;protein_id=YP_006203635.1;transl_table=11
+###

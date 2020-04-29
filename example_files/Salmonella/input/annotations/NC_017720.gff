@@ -1,0 +1,212 @@
+##gff-version 3
+#!gff-spec-version 1.20
+#!processor NCBI annotwriter
+##sequence-region NC_017720.1 1 93842
+##species http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=216597
+NC_017720.1	RefSeq	region	1	93842	.	+	.	ID=id0;Dbxref=taxon:216597;Is_circular=true;gbkey=Src;genome=plasmid;mol_type=genomic DNA;plasmid-name=pSLT_SL1344;serovar=Typhimurium;strain=SL1344
+NC_017720.1	RefSeq	gene	21	584	.	-	.	ID=gene0;Name=finO;gbkey=Gene;gene=finO;locus_tag=SL1344_P1_0001
+NC_017720.1	RefSeq	CDS	21	584	.	-	0	ID=cds0;Name=YP_006203636.1;Parent=gene0;Dbxref=Genbank:YP_006203636.1;gbkey=CDS;product=conjugative transfer regulatory protein;protein_id=YP_006203636.1;transl_table=11
+NC_017720.1	RefSeq	gene	639	1334	.	-	.	ID=gene1;Name=traX;gbkey=Gene;gene=traX;locus_tag=SL1344_P1_0002
+NC_017720.1	RefSeq	CDS	639	1334	.	-	0	ID=cds1;Name=YP_006203637.1;Parent=gene1;Dbxref=Genbank:YP_006203637.1;gbkey=CDS;product=conjugative transfer%2C fimbrial acetylation protein;protein_id=YP_006203637.1;transl_table=11
+NC_017720.1	RefSeq	gene	1399	6657	.	-	.	ID=gene2;Name=traI;gbkey=Gene;gene=traI;locus_tag=SL1344_P1_0003
+NC_017720.1	RefSeq	CDS	1399	6657	.	-	0	ID=cds2;Name=YP_006203638.1;Parent=gene2;Dbxref=Genbank:YP_006203638.1;gbkey=CDS;product=conjugative transfer%2C oriT nicking-unwinding protein;protein_id=YP_006203638.1;transl_table=11
+NC_017720.1	RefSeq	gene	6654	7373	.	-	.	ID=gene3;Name=trbH;gbkey=Gene;gene=trbH;locus_tag=SL1344_P1_0004
+NC_017720.1	RefSeq	CDS	6654	7373	.	-	0	ID=cds3;Name=YP_006203639.1;Parent=gene3;Dbxref=Genbank:YP_006203639.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203639.1;transl_table=11
+NC_017720.1	RefSeq	gene	7373	9535	.	-	.	ID=gene4;Name=traD;gbkey=Gene;gene=traD;locus_tag=SL1344_P1_0007
+NC_017720.1	RefSeq	CDS	7373	9535	.	-	0	ID=cds4;Name=YP_006203640.1;Parent=gene4;Dbxref=Genbank:YP_006203640.1;gbkey=CDS;product=conjugative transfer%2C DNA transport protein;protein_id=YP_006203640.1;transl_table=11
+NC_017720.1	RefSeq	gene	9912	10643	.	-	.	ID=gene5;Name=traT;gbkey=Gene;gene=traT;locus_tag=SL1344_P1_0008
+NC_017720.1	RefSeq	CDS	9912	10643	.	-	0	ID=cds5;Name=YP_006203641.1;Parent=gene5;Dbxref=Genbank:YP_006203641.1;gbkey=CDS;product=conjugative transfer%2C surface exclusion protein;protein_id=YP_006203641.1;transl_table=11
+NC_017720.1	RefSeq	gene	10679	11173	.	-	.	ID=gene6;Name=traS;gbkey=Gene;gene=traS;locus_tag=SL1344_P1_0009
+NC_017720.1	RefSeq	CDS	10679	11173	.	-	0	ID=cds6;Name=YP_006203642.1;Parent=gene6;Dbxref=Genbank:YP_006203642.1;gbkey=CDS;product=conjugative transfer%2C surface exclusion protein;protein_id=YP_006203642.1;transl_table=11
+NC_017720.1	RefSeq	gene	11189	14011	.	-	.	ID=gene7;Name=traG;gbkey=Gene;gene=traG;locus_tag=SL1344_P1_0010
+NC_017720.1	RefSeq	CDS	11189	14011	.	-	0	ID=cds7;Name=YP_006203643.1;Parent=gene7;Dbxref=Genbank:YP_006203643.1;gbkey=CDS;product=conjugative transfe: assembly and aggregate stability protein;protein_id=YP_006203643.1;transl_table=11
+NC_017720.1	RefSeq	gene	14008	15390	.	-	.	ID=gene8;Name=traH;gbkey=Gene;gene=traH;locus_tag=SL1344_P1_0011
+NC_017720.1	RefSeq	CDS	14008	15390	.	-	0	ID=cds8;Name=YP_006203644.1;Parent=gene8;Dbxref=Genbank:YP_006203644.1;gbkey=CDS;product=trah pilus assembly protein %28trah%29;protein_id=YP_006203644.1;transl_table=11
+NC_017720.1	RefSeq	gene	15380	15928	.	-	.	ID=gene9;Name=trbB;gbkey=Gene;gene=trbB;locus_tag=SL1344_P1_0012
+NC_017720.1	RefSeq	CDS	15380	15928	.	-	0	ID=cds9;Name=YP_006203645.1;Parent=gene9;Dbxref=Genbank:YP_006203645.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203645.1;transl_table=11
+NC_017720.1	RefSeq	gene	15915	16208	.	-	.	ID=gene10;Name=traQ;gbkey=Gene;gene=traQ;locus_tag=SL1344_P1_0013
+NC_017720.1	RefSeq	CDS	15915	16208	.	-	0	ID=cds10;Name=YP_006203646.1;Parent=gene10;Dbxref=Genbank:YP_006203646.1;gbkey=CDS;product=conjugative transfer pilin chaperone protein;protein_id=YP_006203646.1;transl_table=11
+NC_017720.1	RefSeq	gene	16422	17171	.	-	.	ID=gene11;Name=traF;gbkey=Gene;gene=traF;locus_tag=SL1344_P1_0014
+NC_017720.1	RefSeq	CDS	16422	17171	.	-	0	ID=cds11;Name=YP_006203647.1;Parent=gene11;Dbxref=Genbank:YP_006203647.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203647.1;transl_table=11
+NC_017720.1	RefSeq	gene	17183	17398	.	-	.	ID=gene12;Name=trbE;gbkey=Gene;gene=trbE;locus_tag=SL1344_P1_0015
+NC_017720.1	RefSeq	CDS	17183	17398	.	-	0	ID=cds12;Name=YP_006203648.1;Parent=gene12;Dbxref=Genbank:YP_006203648.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203648.1;transl_table=11
+NC_017720.1	RefSeq	gene	17409	19235	.	-	.	ID=gene13;Name=traN;gbkey=Gene;gene=traN;locus_tag=SL1344_P1_0016
+NC_017720.1	RefSeq	CDS	17409	19235	.	-	0	ID=cds13;Name=YP_006203649.1;Parent=gene13;Dbxref=Genbank:YP_006203649.1;gbkey=CDS;product=conjugative transfer aggregate stability protein;protein_id=YP_006203649.1;transl_table=11
+NC_017720.1	RefSeq	gene	19688	20326	.	-	.	ID=gene14;Name=trbC;gbkey=Gene;gene=trbC;locus_tag=SL1344_P1_0017
+NC_017720.1	RefSeq	CDS	19688	20326	.	-	0	ID=cds14;Name=YP_006203650.1;Parent=gene14;Dbxref=Genbank:YP_006203650.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203650.1;transl_table=11
+NC_017720.1	RefSeq	gene	20311	20619	.	-	.	ID=gene15;Name=SL1344_P1_0018;gbkey=Gene;locus_tag=SL1344_P1_0018
+NC_017720.1	RefSeq	CDS	20311	20619	.	-	0	ID=cds15;Name=YP_006203651.1;Parent=gene15;Dbxref=Genbank:YP_006203651.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203651.1;transl_table=11
+NC_017720.1	RefSeq	gene	20638	21630	.	-	.	ID=gene16;Name=traU;gbkey=Gene;gene=traU;locus_tag=SL1344_P1_0019
+NC_017720.1	RefSeq	CDS	20638	21630	.	-	0	ID=cds16;Name=YP_006203652.1;Parent=gene16;Dbxref=Genbank:YP_006203652.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203652.1;transl_table=11
+NC_017720.1	RefSeq	gene	21627	22259	.	-	.	ID=gene17;Name=traW;gbkey=Gene;gene=traW;locus_tag=SL1344_P1_0020
+NC_017720.1	RefSeq	CDS	21627	22259	.	-	0	ID=cds17;Name=YP_006203653.1;Parent=gene17;Dbxref=Genbank:YP_006203653.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203653.1;transl_table=11
+NC_017720.1	RefSeq	gene	22256	22642	.	-	.	ID=gene18;Name=trbI;gbkey=Gene;gene=trbI;locus_tag=SL1344_P1_0021
+NC_017720.1	RefSeq	CDS	22256	22642	.	-	0	ID=cds18;Name=YP_006203654.1;Parent=gene18;Dbxref=Genbank:YP_006203654.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203654.1;transl_table=11
+NC_017720.1	RefSeq	gene	22617	25265	.	-	.	ID=gene19;Name=traC;gbkey=Gene;gene=traC;locus_tag=SL1344_P1_0022
+NC_017720.1	RefSeq	CDS	22617	25265	.	-	0	ID=cds19;Name=YP_006203655.1;Parent=gene19;Dbxref=Genbank:YP_006203655.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203655.1;transl_table=11
+NC_017720.1	RefSeq	gene	25661	26128	.	-	.	ID=gene20;Name=SL1344_P1_0023;gbkey=Gene;locus_tag=SL1344_P1_0023
+NC_017720.1	RefSeq	CDS	25661	26128	.	-	0	ID=cds20;Name=YP_006203656.1;Parent=gene20;Dbxref=Genbank:YP_006203656.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203656.1;transl_table=11
+NC_017720.1	RefSeq	gene	26121	26342	.	-	.	ID=gene21;Name=traR;gbkey=Gene;gene=traR;locus_tag=SL1344_P1_0024
+NC_017720.1	RefSeq	CDS	26121	26342	.	-	0	ID=cds21;Name=YP_006203657.1;Parent=gene21;Dbxref=Genbank:YP_006203657.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203657.1;transl_table=11
+NC_017720.1	RefSeq	gene	26477	26992	.	-	.	ID=gene22;Name=traV;gbkey=Gene;gene=traV;locus_tag=SL1344_P1_0025
+NC_017720.1	RefSeq	CDS	26477	26992	.	-	0	ID=cds22;Name=YP_006203658.1;Parent=gene22;Dbxref=Genbank:YP_006203658.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203658.1;transl_table=11
+NC_017720.1	RefSeq	gene	26989	27234	.	-	.	ID=gene23;Name=trbD;gbkey=Gene;gene=trbD;locus_tag=SL1344_P1_0026
+NC_017720.1	RefSeq	CDS	26989	27234	.	-	0	ID=cds23;Name=YP_006203659.1;Parent=gene23;Dbxref=Genbank:YP_006203659.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203659.1;transl_table=11
+NC_017720.1	RefSeq	gene	27212	27808	.	-	.	ID=gene24;Name=traP;gbkey=Gene;gene=traP;locus_tag=SL1344_P1_0027
+NC_017720.1	RefSeq	CDS	27212	27808	.	-	0	ID=cds24;Name=YP_006203660.1;Parent=gene24;Dbxref=Genbank:YP_006203660.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203660.1;transl_table=11
+NC_017720.1	RefSeq	gene	27798	29219	.	-	.	ID=gene25;Name=traB;gbkey=Gene;gene=traB;locus_tag=SL1344_P1_0028
+NC_017720.1	RefSeq	CDS	27798	29219	.	-	0	ID=cds25;Name=YP_006203661.1;Parent=gene25;Dbxref=Genbank:YP_006203661.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203661.1;transl_table=11
+NC_017720.1	RefSeq	gene	29219	29959	.	-	.	ID=gene26;Name=traK;gbkey=Gene;gene=traK;locus_tag=SL1344_P1_0029
+NC_017720.1	RefSeq	CDS	29219	29959	.	-	0	ID=cds26;Name=YP_006203662.1;Parent=gene26;Dbxref=Genbank:YP_006203662.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203662.1;transl_table=11
+NC_017720.1	RefSeq	gene	29946	30512	.	-	.	ID=gene27;Name=traE;gbkey=Gene;gene=traE;locus_tag=SL1344_P1_0030
+NC_017720.1	RefSeq	CDS	29946	30512	.	-	0	ID=cds27;Name=YP_006203663.1;Parent=gene27;Dbxref=Genbank:YP_006203663.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203663.1;transl_table=11
+NC_017720.1	RefSeq	gene	30534	30845	.	-	.	ID=gene28;Name=traL;gbkey=Gene;gene=traL;locus_tag=SL1344_P1_0031
+NC_017720.1	RefSeq	CDS	30534	30845	.	-	0	ID=cds28;Name=YP_006203664.1;Parent=gene28;Dbxref=Genbank:YP_006203664.1;gbkey=CDS;product=conjugative transfer assembly protein;protein_id=YP_006203664.1;transl_table=11
+NC_017720.1	RefSeq	gene	30860	31222	.	-	.	ID=gene29;Name=traA;gbkey=Gene;gene=traA;locus_tag=SL1344_P1_0032
+NC_017720.1	RefSeq	CDS	30860	31222	.	-	0	ID=cds29;Name=YP_006203665.1;Parent=gene29;Dbxref=Genbank:YP_006203665.1;gbkey=CDS;product=conjugative transfer: fimbrial subunit;protein_id=YP_006203665.1;transl_table=11
+NC_017720.1	RefSeq	gene	31264	31584	.	-	.	ID=gene30;Name=traY;gbkey=Gene;gene=traY;locus_tag=SL1344_P1_0033
+NC_017720.1	RefSeq	CDS	31264	31584	.	-	0	ID=cds30;Name=YP_006203666.1;Parent=gene30;Dbxref=Genbank:YP_006203666.1;gbkey=CDS;product=conjugative transfer oriT nicking protein;protein_id=YP_006203666.1;transl_table=11
+NC_017720.1	RefSeq	gene	31585	32271	.	-	.	ID=gene31;Name=traJ;gbkey=Gene;gene=traJ;locus_tag=SL1344_P1_0034
+NC_017720.1	RefSeq	CDS	31585	32271	.	-	0	ID=cds31;Name=YP_006203667.1;Parent=gene31;Dbxref=Genbank:YP_006203667.1;gbkey=CDS;product=conjugative transfer regulatory protein;protein_id=YP_006203667.1;transl_table=11
+NC_017720.1	RefSeq	gene	32230	32397	.	+	.	ID=gene32;Name=finP;gbkey=Gene;gene=finP;locus_tag=SL1344_P1_0105
+NC_017720.1	RefSeq	transcript	32230	32397	.	+	.	ID=rna0;Parent=gene32;gbkey=misc_RNA;product=antisense RNA determining region
+NC_017720.1	RefSeq	exon	32230	32397	.	+	.	ID=id1;Parent=rna0;gbkey=misc_RNA;product=antisense RNA determining region
+NC_017720.1	RefSeq	gene	32464	32844	.	-	.	ID=gene33;Name=traM;gbkey=Gene;gene=traM;locus_tag=SL1344_P1_0035
+NC_017720.1	RefSeq	CDS	32464	32844	.	-	0	ID=cds32;Name=YP_006203668.1;Parent=gene33;Dbxref=Genbank:YP_006203668.1;gbkey=CDS;product=conjugative transfer protein;protein_id=YP_006203668.1;transl_table=11
+NC_017720.1	RefSeq	gene	33259	33729	.	+	.	ID=gene34;Name=SL1344_P1_0036;gbkey=Gene;locus_tag=SL1344_P1_0036
+NC_017720.1	RefSeq	CDS	33259	33729	.	+	0	ID=cds33;Name=YP_006203669.1;Parent=gene34;Dbxref=Genbank:YP_006203669.1;gbkey=CDS;product=putative transglycosylase;protein_id=YP_006203669.1;transl_table=11
+NC_017720.1	RefSeq	gene	35368	36105	.	-	.	ID=gene35;Name=psiA;gbkey=Gene;gene=psiA;locus_tag=SL1344_P1_0037
+NC_017720.1	RefSeq	CDS	35368	36105	.	-	0	ID=cds34;Name=YP_006203670.1;Parent=gene35;Dbxref=Genbank:YP_006203670.1;gbkey=CDS;product=Plasmid SOS inhibition;protein_id=YP_006203670.1;transl_table=11
+NC_017720.1	RefSeq	gene	36102	36536	.	-	.	ID=gene36;Name=psiB;gbkey=Gene;gene=psiB;locus_tag=SL1344_P1_0038
+NC_017720.1	RefSeq	CDS	36102	36536	.	-	0	ID=cds35;Name=YP_006203671.1;Parent=gene36;Dbxref=Genbank:YP_006203671.1;gbkey=CDS;product=plasmid sos inhibition;protein_id=YP_006203671.1;transl_table=11
+NC_017720.1	RefSeq	gene	36576	38573	.	-	.	ID=gene37;Name=SL1344_P1_0039;gbkey=Gene;locus_tag=SL1344_P1_0039
+NC_017720.1	RefSeq	CDS	36576	38573	.	-	0	ID=cds36;Name=YP_006203672.1;Parent=gene37;Dbxref=Genbank:YP_006203672.1;gbkey=CDS;product=putative ParB-like nuclease domain;protein_id=YP_006203672.1;transl_table=11
+NC_017720.1	RefSeq	gene	38642	38884	.	-	.	ID=gene38;Name=SL1344_P1_0040;gbkey=Gene;locus_tag=SL1344_P1_0040
+NC_017720.1	RefSeq	CDS	38642	38884	.	-	0	ID=cds37;Name=YP_006203673.1;Parent=gene38;Dbxref=Genbank:YP_006203673.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203673.1;transl_table=11
+NC_017720.1	RefSeq	gene	38939	39457	.	-	.	ID=gene39;Name=ssbB;gbkey=Gene;gene=ssbB;locus_tag=SL1344_P1_0041
+NC_017720.1	RefSeq	CDS	38939	39457	.	-	0	ID=cds38;Name=YP_006203674.1;Parent=gene39;Dbxref=Genbank:YP_006203674.1;gbkey=CDS;product=single-strand DNA binding protein;protein_id=YP_006203674.1;transl_table=11
+NC_017720.1	RefSeq	gene	40158	40481	.	-	.	ID=gene40;Name=SL1344_P1_0042;gbkey=Gene;locus_tag=SL1344_P1_0042
+NC_017720.1	RefSeq	CDS	40158	40481	.	-	0	ID=cds39;Name=YP_006203675.1;Parent=gene40;Dbxref=Genbank:YP_006203675.1;gbkey=CDS;product=putative inner membrane protein;protein_id=YP_006203675.1;transl_table=11
+NC_017720.1	RefSeq	gene	40717	41151	.	-	.	ID=gene41;Name=SL1344_P1_0043;gbkey=Gene;locus_tag=SL1344_P1_0043
+NC_017720.1	RefSeq	CDS	40717	41151	.	-	0	ID=cds40;Name=YP_006203676.1;Parent=gene41;Dbxref=Genbank:YP_006203676.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203676.1;transl_table=11
+NC_017720.1	RefSeq	gene	41218	41652	.	-	.	ID=gene42;Name=SL1344_P1_0044;gbkey=Gene;locus_tag=SL1344_P1_0044
+NC_017720.1	RefSeq	CDS	41218	41652	.	-	0	ID=cds41;Name=YP_006203677.1;Parent=gene42;Dbxref=Genbank:YP_006203677.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203677.1;transl_table=11
+NC_017720.1	RefSeq	gene	41666	42115	.	-	.	ID=gene43;Name=SL1344_P1_0044A;gbkey=Gene;locus_tag=SL1344_P1_0044A;partial=true
+NC_017720.1	RefSeq	CDS	41666	42115	.	-	0	ID=cds42;Name=YP_006203678.1;Parent=gene43;Dbxref=Genbank:YP_006203678.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203678.1;transl_table=11
+NC_017720.1	RefSeq	gene	42148	42885	.	-	.	ID=gene44;Name=SL1344_P1_0045;gbkey=Gene;locus_tag=SL1344_P1_0045
+NC_017720.1	RefSeq	CDS	42148	42885	.	-	0	ID=cds43;Name=YP_006203679.1;Parent=gene44;Dbxref=Genbank:YP_006203679.1;gbkey=CDS;product=putative inner membrane protein;protein_id=YP_006203679.1;transl_table=11
+NC_017720.1	RefSeq	gene	42984	43397	.	-	.	ID=gene45;Name=SL1344_P1_0047;gbkey=Gene;locus_tag=SL1344_P1_0047
+NC_017720.1	RefSeq	CDS	42984	43397	.	-	0	ID=cds44;Name=YP_006203680.1;Parent=gene45;Dbxref=Genbank:YP_006203680.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203680.1;transl_table=11
+NC_017720.1	RefSeq	gene	43453	43674	.	-	.	ID=gene46;Name=SL1344_P1_0048;gbkey=Gene;locus_tag=SL1344_P1_0048
+NC_017720.1	RefSeq	CDS	43453	43674	.	-	0	ID=cds45;Name=YP_006203681.1;Parent=gene46;Dbxref=Genbank:YP_006203681.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203681.1;transl_table=11
+NC_017720.1	RefSeq	gene	43674	44354	.	-	.	ID=gene47;Name=SL1344_P1_0049;gbkey=Gene;locus_tag=SL1344_P1_0049
+NC_017720.1	RefSeq	CDS	43674	44354	.	-	0	ID=cds46;Name=YP_006203682.1;Parent=gene47;Dbxref=Genbank:YP_006203682.1;gbkey=CDS;product=putative adenine-specific DNA methylase;protein_id=YP_006203682.1;transl_table=11
+NC_017720.1	RefSeq	gene	44736	45092	.	-	.	ID=gene48;Name=SL1344_P1_0050;gbkey=Gene;locus_tag=SL1344_P1_0050
+NC_017720.1	RefSeq	CDS	44736	45092	.	-	0	ID=cds47;Name=YP_006203683.1;Parent=gene48;Dbxref=Genbank:YP_006203683.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203683.1;transl_table=11
+NC_017720.1	RefSeq	gene	45085	45555	.	-	.	ID=gene49;Name=SL1344_P1_0051;gbkey=Gene;locus_tag=SL1344_P1_0051
+NC_017720.1	RefSeq	CDS	45085	45555	.	-	0	ID=cds48;Name=YP_006203684.1;Parent=gene49;Dbxref=Genbank:YP_006203684.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203684.1;transl_table=11
+NC_017720.1	RefSeq	gene	46066	46488	.	+	.	ID=gene50;Name=samA;gbkey=Gene;gene=samA;locus_tag=SL1344_P1_0052
+NC_017720.1	RefSeq	CDS	46066	46488	.	+	0	ID=cds49;Name=YP_006203685.1;Parent=gene50;Dbxref=Genbank:YP_006203685.1;gbkey=CDS;product=mutagenesis by UV and mutagens%3B related to umuDC operon;protein_id=YP_006203685.1;transl_table=11
+NC_017720.1	RefSeq	gene	46488	47762	.	+	.	ID=gene51;Name=samB;gbkey=Gene;gene=samB;locus_tag=SL1344_P1_0053
+NC_017720.1	RefSeq	CDS	46488	47762	.	+	0	ID=cds50;Name=YP_006203686.1;Parent=gene51;Dbxref=Genbank:YP_006203686.1;gbkey=CDS;product=mutagenesis by UV and mutagens%3B related to umuDC operon;protein_id=YP_006203686.1;transl_table=11
+NC_017720.1	RefSeq	gene	47844	48821	.	-	.	ID=gene52;Name=parB;gbkey=Gene;gene=parB;locus_tag=SL1344_P1_0054
+NC_017720.1	RefSeq	CDS	47844	48821	.	-	0	ID=cds51;Name=YP_006203687.1;Parent=gene52;Dbxref=Genbank:YP_006203687.1;gbkey=CDS;product=plasmid partition protein B;protein_id=YP_006203687.1;transl_table=11
+NC_017720.1	RefSeq	gene	48818	50023	.	-	.	ID=gene53;Name=parA;gbkey=Gene;gene=parA;locus_tag=SL1344_P1_0055
+NC_017720.1	RefSeq	CDS	48818	50023	.	-	0	ID=cds52;Name=YP_006203688.1;Parent=gene53;Dbxref=Genbank:YP_006203688.1;gbkey=CDS;product=plasmid partition protein A;protein_id=YP_006203688.1;transl_table=11
+NC_017720.1	RefSeq	gene	50438	51379	.	+	.	ID=gene54;Name=samB2;gbkey=Gene;gene=samB2;locus_tag=SL1344_P1_0056
+NC_017720.1	RefSeq	CDS	50438	51379	.	+	0	ID=cds53;Name=YP_006203689.1;Parent=gene54;Dbxref=Genbank:YP_006203689.1;gbkey=CDS;product=putative transposase;protein_id=YP_006203689.1;transl_table=11
+NC_017720.1	RefSeq	gene	52553	52969	.	-	.	ID=gene55;Name=SL1344_P1_0058;gbkey=Gene;locus_tag=SL1344_P1_0058
+NC_017720.1	RefSeq	CDS	52553	52969	.	-	0	ID=cds54;Name=YP_006203690.1;Parent=gene55;Dbxref=Genbank:YP_006203690.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203690.1;transl_table=11
+NC_017720.1	RefSeq	gene	53055	54170	.	-	.	ID=gene56;Name=tlpA;gbkey=Gene;gene=tlpA;locus_tag=SL1344_P1_0059
+NC_017720.1	RefSeq	CDS	53055	54170	.	-	0	ID=cds55;Name=YP_006203691.1;Parent=gene56;Dbxref=Genbank:YP_006203691.1;gbkey=CDS;product=alpha-helical coiled coil protein;protein_id=YP_006203691.1;transl_table=11
+NC_017720.1	RefSeq	gene	54429	54917	.	+	.	ID=gene57;Name=SL1344_P1_0060;gbkey=Gene;locus_tag=SL1344_P1_0060
+NC_017720.1	RefSeq	CDS	54429	54917	.	+	0	ID=cds56;Name=YP_006203692.1;Parent=gene57;Dbxref=Genbank:YP_006203692.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203692.1;transl_table=11
+NC_017720.1	RefSeq	gene	55572	56312	.	+	.	ID=gene58;Name=SL1344_P1_0061;gbkey=Gene;locus_tag=SL1344_P1_0061
+NC_017720.1	RefSeq	CDS	55572	56312	.	+	0	ID=cds57;Name=YP_006203693.1;Parent=gene58;Dbxref=Genbank:YP_006203693.1;gbkey=CDS;product=putative carbonic anhydrase;protein_id=YP_006203693.1;transl_table=11
+NC_017720.1	RefSeq	gene	56447	57079	.	+	.	ID=gene59;Name=rlgA;gbkey=Gene;gene=rlgA;locus_tag=SL1344_P1_0062
+NC_017720.1	RefSeq	CDS	56447	57079	.	+	0	ID=cds58;Name=YP_006203694.1;Parent=gene59;Dbxref=Genbank:YP_006203694.1;gbkey=CDS;product=putative resolvase;protein_id=YP_006203694.1;transl_table=11
+NC_017720.1	RefSeq	gene	57063	58727	.	+	.	ID=gene60;Name=rlgA2;gbkey=Gene;gene=rlgA2;locus_tag=SL1344_P1_0063
+NC_017720.1	RefSeq	CDS	57063	58727	.	+	0	ID=cds59;Name=YP_006203695.1;Parent=gene60;Dbxref=Genbank:YP_006203695.1;gbkey=CDS;product=putative integrase protein;protein_id=YP_006203695.1;transl_table=11
+NC_017720.1	RefSeq	gene	58660	59685	.	+	.	ID=gene61;Name=SL1344_P1_0064;gbkey=Gene;locus_tag=SL1344_P1_0064
+NC_017720.1	RefSeq	CDS	58660	59685	.	+	0	ID=cds60;Name=YP_006203696.1;Parent=gene61;Dbxref=Genbank:YP_006203696.1;gbkey=CDS;product=putative phosphoribulokinase %2F uridine kinase family;protein_id=YP_006203696.1;transl_table=11
+NC_017720.1	RefSeq	gene	59874	60869	.	-	.	ID=gene62;Name=SL1344_P1_0065;gbkey=Gene;locus_tag=SL1344_P1_0065
+NC_017720.1	RefSeq	CDS	59874	60869	.	-	0	ID=cds61;Name=YP_006203697.1;Parent=gene62;Dbxref=Genbank:YP_006203697.1;gbkey=CDS;product=putative integrase protein;protein_id=YP_006203697.1;transl_table=11
+NC_017720.1	RefSeq	gene	61520	62413	.	+	.	ID=gene63;Name=spvR;gbkey=Gene;gene=spvR;locus_tag=SL1344_P1_0066
+NC_017720.1	RefSeq	CDS	61520	62413	.	+	0	ID=cds62;Name=YP_006203698.1;Parent=gene63;Dbxref=Genbank:YP_006203698.1;gbkey=CDS;product=Salmonella plasmid virulence lysR family regulator;protein_id=YP_006203698.1;transl_table=11
+NC_017720.1	RefSeq	gene	62925	63692	.	+	.	ID=gene64;Name=spvA;gbkey=Gene;gene=spvA;locus_tag=SL1344_P1_0067
+NC_017720.1	RefSeq	CDS	62925	63692	.	+	0	ID=cds63;Name=YP_006203699.1;Parent=gene64;Dbxref=Genbank:YP_006203699.1;gbkey=CDS;product=Salmonella plasmid virulence outer membrane protein;protein_id=YP_006203699.1;transl_table=11
+NC_017720.1	RefSeq	gene	63874	65649	.	+	.	ID=gene65;Name=spvB;gbkey=Gene;gene=spvB;locus_tag=SL1344_P1_0068
+NC_017720.1	RefSeq	CDS	63874	65649	.	+	0	ID=cds64;Name=YP_006203700.1;Parent=gene65;Dbxref=Genbank:YP_006203700.1;gbkey=CDS;product=Salmonella plasmid virulence protein;protein_id=YP_006203700.1;transl_table=11
+NC_017720.1	RefSeq	gene	66047	66655	.	+	.	ID=gene66;Name=spvC;gbkey=Gene;gene=spvC;locus_tag=SL1344_P1_0069
+NC_017720.1	RefSeq	CDS	66047	66655	.	+	0	ID=cds65;Name=YP_006203701.1;Parent=gene66;Dbxref=Genbank:YP_006203701.1;gbkey=CDS;product=Salmonella plasmid virulence protein;protein_id=YP_006203701.1;transl_table=11
+NC_017720.1	RefSeq	gene	66916	67566	.	+	.	ID=gene67;Name=spvD;gbkey=Gene;gene=spvD;locus_tag=SL1344_P1_0070
+NC_017720.1	RefSeq	CDS	66916	67566	.	+	0	ID=cds66;Name=YP_006203702.1;Parent=gene67;Dbxref=Genbank:YP_006203702.1;gbkey=CDS;product=Salmonella plasmid virulence protein;protein_id=YP_006203702.1;transl_table=11
+NC_017720.1	RefSeq	gene	67693	67956	.	-	.	ID=gene68;Name=SL1344_P1_0071;gbkey=Gene;locus_tag=SL1344_P1_0071
+NC_017720.1	RefSeq	CDS	67693	67956	.	-	0	ID=cds67;Name=YP_006203703.1;Parent=gene68;Dbxref=Genbank:YP_006203703.1;gbkey=CDS;product=putative transposase;protein_id=YP_006203703.1;transl_table=11
+NC_017720.1	RefSeq	gene	68174	68524	.	+	.	ID=gene69;Name=SL1344_P1_0072;gbkey=Gene;locus_tag=SL1344_P1_0072
+NC_017720.1	RefSeq	CDS	68174	68524	.	+	0	ID=cds68;Name=YP_006203704.1;Parent=gene69;Dbxref=Genbank:YP_006203704.1;gbkey=CDS;product=putative transposase;protein_id=YP_006203704.1;transl_table=11
+NC_017720.1	RefSeq	gene	68591	69151	.	-	.	ID=gene70;Name=SL1344_P1_0073;gbkey=Gene;locus_tag=SL1344_P1_0073
+NC_017720.1	RefSeq	CDS	68591	69151	.	-	0	ID=cds69;Name=YP_006203705.1;Parent=gene70;Dbxref=Genbank:YP_006203705.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203705.1;transl_table=11
+NC_017720.1	RefSeq	gene	69031	69687	.	-	.	ID=gene71;Name=SL1344_P1_0073A;gbkey=Gene;locus_tag=SL1344_P1_0073A;partial=true
+NC_017720.1	RefSeq	CDS	69031	69687	.	-	0	ID=cds70;Name=YP_006203706.1;Parent=gene71;Dbxref=Genbank:YP_006203706.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203706.1;transl_table=11
+NC_017720.1	RefSeq	gene	69880	70365	.	-	.	ID=gene72;Name=SL1344_P1_0074;gbkey=Gene;locus_tag=SL1344_P1_0074
+NC_017720.1	RefSeq	CDS	69880	70365	.	-	0	ID=cds71;Name=YP_006203707.1;Parent=gene72;Dbxref=Genbank:YP_006203707.1;gbkey=CDS;product=putative inner membrane protein;protein_id=YP_006203707.1;transl_table=11
+NC_017720.1	RefSeq	gene	71034	71585	.	-	.	ID=gene73;Name=SL1344_P1_0075;gbkey=Gene;locus_tag=SL1344_P1_0075
+NC_017720.1	RefSeq	CDS	71034	71585	.	-	0	ID=cds72;Name=YP_006203708.1;Parent=gene73;Dbxref=Genbank:YP_006203708.1;gbkey=CDS;product=diguanylate cyclase;protein_id=YP_006203708.1;transl_table=11
+NC_017720.1	RefSeq	gene	71594	72376	.	-	.	ID=gene74;Name=rsdB;gbkey=Gene;gene=rsdB;locus_tag=SL1344_P1_0076
+NC_017720.1	RefSeq	CDS	71594	72376	.	-	0	ID=cds73;Name=YP_006203709.1;Parent=gene74;Dbxref=Genbank:YP_006203709.1;gbkey=CDS;product=resolvase;protein_id=YP_006203709.1;transl_table=11
+NC_017720.1	RefSeq	gene	72411	72932	.	-	.	ID=gene75;Name=SL1344_P1_0077;gbkey=Gene;locus_tag=SL1344_P1_0077
+NC_017720.1	RefSeq	CDS	72411	72932	.	-	0	ID=cds74;Name=YP_006203710.1;Parent=gene75;Dbxref=Genbank:YP_006203710.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203710.1;transl_table=11
+NC_017720.1	RefSeq	gene	72929	73219	.	-	.	ID=gene76;Name=SL1344_P1_0078;gbkey=Gene;locus_tag=SL1344_P1_0078
+NC_017720.1	RefSeq	CDS	72929	73219	.	-	0	ID=cds75;Name=YP_006203711.1;Parent=gene76;Dbxref=Genbank:YP_006203711.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203711.1;transl_table=11
+NC_017720.1	RefSeq	gene	73221	73526	.	-	.	ID=gene77;Name=ccdB;gbkey=Gene;gene=ccdB;locus_tag=SL1344_P1_0079
+NC_017720.1	RefSeq	CDS	73221	73526	.	-	0	ID=cds76;Name=YP_006203712.1;Parent=gene77;Dbxref=Genbank:YP_006203712.1;gbkey=CDS;product=toxin addiction system;protein_id=YP_006203712.1;transl_table=11
+NC_017720.1	RefSeq	gene	73528	73746	.	-	.	ID=gene78;Name=ccdA;gbkey=Gene;gene=ccdA;locus_tag=SL1344_P1_0080
+NC_017720.1	RefSeq	CDS	73528	73746	.	-	0	ID=cds77;Name=YP_006203713.1;Parent=gene78;Dbxref=Genbank:YP_006203713.1;gbkey=CDS;product=toxin addiction system;protein_id=YP_006203713.1;transl_table=11
+NC_017720.1	RefSeq	gene	74422	74943	.	+	.	ID=gene79;Name=SL1344_P1_0081;gbkey=Gene;locus_tag=SL1344_P1_0081
+NC_017720.1	RefSeq	CDS	74422	74943	.	+	0	ID=cds78;Name=YP_006203714.1;Parent=gene79;Dbxref=Genbank:YP_006203714.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203714.1;transl_table=11
+NC_017720.1	RefSeq	gene	75427	75723	.	+	.	ID=gene80;Name=SL1344_P1_0082;gbkey=Gene;locus_tag=SL1344_P1_0082
+NC_017720.1	RefSeq	CDS	75427	75723	.	+	0	ID=cds79;Name=YP_006203715.1;Parent=gene80;Dbxref=Genbank:YP_006203715.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203715.1;transl_table=11
+NC_017720.1	RefSeq	gene	76217	77206	.	+	.	ID=gene81;Name=repA2;gbkey=Gene;gene=repA2;locus_tag=SL1344_P1_0084
+NC_017720.1	RefSeq	CDS	76217	77206	.	+	0	ID=cds80;Name=YP_006203716.1;Parent=gene81;Dbxref=Genbank:YP_006203716.1;gbkey=CDS;product=DNA replication;protein_id=YP_006203716.1;transl_table=11
+NC_017720.1	RefSeq	gene	78078	78287	.	-	.	ID=gene82;Name=SL1344_P1_0085;gbkey=Gene;locus_tag=SL1344_P1_0085
+NC_017720.1	RefSeq	CDS	78078	78287	.	-	0	ID=cds81;Name=YP_006203717.1;Parent=gene82;Dbxref=Genbank:YP_006203717.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203717.1;transl_table=11
+NC_017720.1	RefSeq	gene	79178	79480	.	+	.	ID=gene83;Name=pefB;gbkey=Gene;gene=pefB;locus_tag=SL1344_P1_0086
+NC_017720.1	RefSeq	CDS	79178	79480	.	+	0	ID=cds82;Name=YP_006203718.1;Parent=gene83;Dbxref=Genbank:YP_006203718.1;gbkey=CDS;product=fimbrial regulator;protein_id=YP_006203718.1;transl_table=11
+NC_017720.1	RefSeq	gene	79755	80273	.	+	.	ID=gene84;Name=pefA;gbkey=Gene;gene=pefA;locus_tag=SL1344_P1_0087
+NC_017720.1	RefSeq	CDS	79755	80273	.	+	0	ID=cds83;Name=YP_006203719.1;Parent=gene84;Dbxref=Genbank:YP_006203719.1;gbkey=CDS;product=plasmid-encoded major fimbrial subunit;protein_id=YP_006203719.1;transl_table=11
+NC_017720.1	RefSeq	gene	80612	82909	.	+	.	ID=gene85;Name=pefC;gbkey=Gene;gene=pefC;locus_tag=SL1344_P1_0088
+NC_017720.1	RefSeq	CDS	80612	82909	.	+	0	ID=cds84;Name=YP_006203720.1;Parent=gene85;Dbxref=Genbank:YP_006203720.1;gbkey=CDS;product=plasmid-encoded fimbrial usher protein;protein_id=YP_006203720.1;transl_table=11
+NC_017720.1	RefSeq	gene	82902	83594	.	+	.	ID=gene86;Name=pefD;gbkey=Gene;gene=pefD;locus_tag=SL1344_P1_0089
+NC_017720.1	RefSeq	CDS	82902	83594	.	+	0	ID=cds85;Name=YP_006203721.1;Parent=gene86;Dbxref=Genbank:YP_006203721.1;gbkey=CDS;product=plasmid-encoded fimbrial chaperone;protein_id=YP_006203721.1;transl_table=11
+NC_017720.1	RefSeq	gene	83648	84166	.	+	.	ID=gene87;Name=SL1344_P1_0090;gbkey=Gene;locus_tag=SL1344_P1_0090
+NC_017720.1	RefSeq	CDS	83648	84166	.	+	0	ID=cds86;Name=YP_006203722.1;Parent=gene87;Dbxref=Genbank:YP_006203722.1;gbkey=CDS;product=putative outer membrane protein;protein_id=YP_006203722.1;transl_table=11
+NC_017720.1	RefSeq	gene	84419	85294	.	+	.	ID=gene88;Name=SL1344_P1_0091;gbkey=Gene;locus_tag=SL1344_P1_0091
+NC_017720.1	RefSeq	CDS	84419	85294	.	+	0	ID=cds87;Name=YP_006203723.1;Parent=gene88;Dbxref=Genbank:YP_006203723.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203723.1;transl_table=11
+NC_017720.1	RefSeq	gene	85726	85938	.	+	.	ID=gene89;Name=pefI;gbkey=Gene;gene=pefI;locus_tag=SL1344_P1_0092
+NC_017720.1	RefSeq	CDS	85726	85938	.	+	0	ID=cds88;Name=YP_006203724.1;Parent=gene89;Dbxref=Genbank:YP_006203724.1;gbkey=CDS;product=plasmid-encoded fimbriae;protein_id=YP_006203724.1;transl_table=11
+NC_017720.1	RefSeq	gene	85923	86273	.	+	.	ID=gene90;Name=SL1344_P1_0093;gbkey=Gene;locus_tag=SL1344_P1_0093
+NC_017720.1	RefSeq	CDS	85923	86273	.	+	0	ID=cds89;Name=YP_006203725.1;Parent=gene90;Dbxref=Genbank:YP_006203725.1;gbkey=CDS;product=putative luxR family bacterial regulatory protein;protein_id=YP_006203725.1;transl_table=11
+NC_017720.1	RefSeq	gene	86518	87171	.	+	.	ID=gene91;Name=srgA;gbkey=Gene;gene=srgA;locus_tag=SL1344_P1_0094
+NC_017720.1	RefSeq	CDS	86518	87171	.	+	0	ID=cds90;Name=YP_006203726.1;Parent=gene91;Dbxref=Genbank:YP_006203726.1;gbkey=CDS;product=putative thiol-disulfide isomerase or thioredoxin;protein_id=YP_006203726.1;transl_table=11
+NC_017720.1	RefSeq	gene	87304	88203	.	+	.	ID=gene92;Name=srgB;gbkey=Gene;gene=srgB;locus_tag=SL1344_P1_0095
+NC_017720.1	RefSeq	CDS	87304	88203	.	+	0	ID=cds91;Name=YP_006203727.1;Parent=gene92;Dbxref=Genbank:YP_006203727.1;gbkey=CDS;product=putative outer membrane protein;protein_id=YP_006203727.1;transl_table=11
+NC_017720.1	RefSeq	gene	88293	88850	.	+	.	ID=gene93;Name=rcK;gbkey=Gene;gene=rcK;locus_tag=SL1344_P1_0096
+NC_017720.1	RefSeq	CDS	88293	88850	.	+	0	ID=cds92;Name=YP_006203728.1;Parent=gene93;Dbxref=Genbank:YP_006203728.1;gbkey=CDS;product=resistance to complement killing;protein_id=YP_006203728.1;transl_table=11
+NC_017720.1	RefSeq	gene	89117	89875	.	+	.	ID=gene94;Name=srgC;gbkey=Gene;gene=srgC;locus_tag=SL1344_P1_0097
+NC_017720.1	RefSeq	CDS	89117	89875	.	+	0	ID=cds93;Name=YP_006203729.1;Parent=gene94;Dbxref=Genbank:YP_006203729.1;gbkey=CDS;product=putative bacterial regulatory protein %28AraC family%29;protein_id=YP_006203729.1;transl_table=11
+NC_017720.1	RefSeq	gene	89972	90112	.	-	.	ID=gene95;Name=SL1344_P1_0098;gbkey=Gene;locus_tag=SL1344_P1_0098
+NC_017720.1	RefSeq	CDS	89972	90112	.	-	0	ID=cds94;Name=YP_006203730.1;Parent=gene95;Dbxref=Genbank:YP_006203730.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203730.1;transl_table=11
+NC_017720.1	RefSeq	gene	91053	91934	.	-	.	ID=gene96;Name=repA;gbkey=Gene;gene=repA;locus_tag=SL1344_P1_0099
+NC_017720.1	RefSeq	CDS	91053	91934	.	-	0	ID=cds95;Name=YP_006203731.1;Parent=gene96;Dbxref=Genbank:YP_006203731.1;gbkey=CDS;product=DNA replication;protein_id=YP_006203731.1;transl_table=11
+NC_017720.1	RefSeq	gene	91915	91992	.	-	.	ID=gene97;Name=tap;gbkey=Gene;gene=tap;locus_tag=SL1344_P1_0100
+NC_017720.1	RefSeq	CDS	91915	91992	.	-	0	ID=cds96;Name=YP_006203732.1;Parent=gene97;Dbxref=Genbank:YP_006203732.1;gbkey=CDS;product=plasmid replication protein;protein_id=YP_006203732.1;transl_table=11
+NC_017720.1	RefSeq	gene	91997	92119	.	-	.	ID=gene98;Name=repA3;gbkey=Gene;gene=repA3;locus_tag=SL1344_P1_0101
+NC_017720.1	RefSeq	CDS	91997	92119	.	-	0	ID=cds97;Name=YP_006203733.1;Parent=gene98;Dbxref=Genbank:YP_006203733.1;gbkey=CDS;product=plasmid replication protein;protein_id=YP_006203733.1;transl_table=11
+NC_017720.1	RefSeq	gene	92242	92487	.	-	.	ID=gene99;Name=repC;gbkey=Gene;gene=repC;locus_tag=SL1344_P1_0102
+NC_017720.1	RefSeq	CDS	92242	92487	.	-	0	ID=cds98;Name=YP_006203734.1;Parent=gene99;Dbxref=Genbank:YP_006203734.1;gbkey=CDS;product=plasmid replication protein;protein_id=YP_006203734.1;transl_table=11
+NC_017720.1	RefSeq	gene	92687	93130	.	-	.	ID=gene100;Name=SL1344_P1_0103;gbkey=Gene;locus_tag=SL1344_P1_0103
+NC_017720.1	RefSeq	CDS	92687	93130	.	-	0	ID=cds99;Name=YP_006203735.1;Parent=gene100;Dbxref=Genbank:YP_006203735.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203735.1;transl_table=11
+NC_017720.1	RefSeq	gene	93464	93748	.	-	.	ID=gene101;Name=SL1344_P1_0104;gbkey=Gene;locus_tag=SL1344_P1_0104
+NC_017720.1	RefSeq	CDS	93464	93748	.	-	0	ID=cds100;Name=YP_006203736.1;Parent=gene101;Dbxref=Genbank:YP_006203736.1;gbkey=CDS;product=hypothetical protein;protein_id=YP_006203736.1;transl_table=11
+###
