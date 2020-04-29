@@ -142,6 +142,21 @@ if os.path.isfile('reference_sequences/genome_sequence.fa'):
 if os.path.isfile('input.fa'):
         os.remove('input.fa')
 
+#check if all required files exist and create folders if needed:
+if annotation_file is False:
+	if len(os.listdir("annotations")) == 0:
+		print("No annotation file in the annotations folder! Did you mean "
+		"to use the --manual_ann argument?")
+		sys.exit()
+
+if not os.path.isdir('bowtie_files'):
+	os.mkdir('bowtie_files')
+
+
+if len(os.listdir("reference_sequences")) == 0:
+	print("No files are present in the reference_sequences "
+	"folder, exiting the script.")
+	sys.exit()
 
 #make a multifasta file with all sequences present in /reference_sequences
 genome_fa_file = open("reference_sequences/genome_sequence.fa",mode= "w+")
@@ -395,4 +410,4 @@ print("Done! Some (maybe) useful data:\n\n"
 os.remove("reference_sequences/genome_sequence.fa")
 if annotation_file is False:
 	os.remove("annotations/annotation_file.gff")
-#os.remove("input.fa")
+os.remove("input.fa")
