@@ -246,8 +246,12 @@ else: #if a custom rRNA annotation was provided
 		annotation = open("{0}".format(annotation_file), "r")
 		reader = csv.reader(annotation, delimiter = "\t")
 		for line in reader:
+			scaffold = line[0]
+			if scaffold not in genome_seqs:
+				print("Error: the scaffold ID '{0}' in the bed file is different "
+				"from the IDs in the fasta file(s); please correct this.".format(scaffold))
+				sys.exit()
 			try:
-				scaffold = line[0]
 				ID = regex_rrna.findall(line[3])[0]
 				start = int(line[1])
 				end = int(line[2])
@@ -265,8 +269,8 @@ else: #if a custom rRNA annotation was provided
 				print("Error: something went wrong while handling the custom "
 				"rRNA annotation file provided after the -ma argument. Is the "
 				"file in the right format? (Should be tab-separated, with "
-                                "scaffold names same as in the fasta files etc.; please check "
-                                "the README file part about this)")
+				"scaffold names same as in the fasta files etc.; please check "
+				"the README file part about this)")
 				sys.exit()
 
 #find gRNA spacer sequences in the rRNA genes and filter for GC content:
