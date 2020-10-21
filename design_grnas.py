@@ -26,7 +26,7 @@ parser.add_argument('--offtargets', '-o', default=False, action='store_true',
 
 parser.add_argument('--manual_ann', '-ma', default=False, action='store',
 					help='Use if you want to provide a file with the manual '
-					'annotation (in bed format) of the rRNA genes (Default: False).')
+					'annotation (in bed format, tab-separated) of the rRNA genes (Default: False).')
 
 parser.add_argument('--pam', '-p', default="NGG", type=str,
 					help='PAM sequence (Default: NGG).')
@@ -264,7 +264,9 @@ else: #if a custom rRNA annotation was provided
 			except:
 				print("Error: something went wrong while handling the custom "
 				"rRNA annotation file provided after the -ma argument. Is the "
-				"file in the right (.bed) format?")
+				"file in the right format? (Should be tab-separated, with "
+                                "scaffold names same as in the fasta files etc.; please check "
+                                "the README file part about this)")
 				sys.exit()
 
 #find gRNA spacer sequences in the rRNA genes and filter for GC content:
