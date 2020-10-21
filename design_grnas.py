@@ -264,7 +264,7 @@ else: #if a custom rRNA annotation was provided
 			except:
 				print("Error: something went wrong while handling the custom "
 				"rRNA annotation file provided after the -ma argument. Is the "
-				"file in the right (bam) format?")
+				"file in the right (.bed) format?")
 				sys.exit()
 
 #find gRNA spacer sequences in the rRNA genes and filter for GC content:
