@@ -25,7 +25,7 @@ optional arguments:
                         targeting.
   --manual_ann MANUAL_ANN, -ma MANUAL_ANN
                         Use if you want to provide a file with the manual
-                        annotation (in bed format) of the rRNA genes (Default:
+                        annotation (in bed format, tab-separated) of the rRNA genes (Default:
                         False).
   --pam PAM, -p PAM     PAM sequence (Default: NGG).
 ```
