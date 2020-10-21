@@ -137,13 +137,15 @@ def primer_heterodimer(oligo,ID):
 
 #cleanup of previous interrupted runs:
 if os.path.isfile('bowtie.csv'):
-        os.remove('bowtie.csv')
+	os.remove('bowtie.csv')
 if os.path.isfile('grnas.fa'):
-        os.remove('grnas.fa')
+	os.remove('grnas.fa')
 if os.path.isfile('reference_sequences/genome_sequence.fa'):
-        os.remove('reference_sequences/genome_sequence.fa')
+	os.remove('reference_sequences/genome_sequence.fa')
 if os.path.isfile('input.fa'):
-        os.remove('input.fa')
+	os.remove('input.fa')
+if os.path.isfile('annotations/annotation_file.gff'):
+	os.remove('annotations/annotation_file.gff')
 
 #check if all required files exist and create folders if needed:
 if annotation_file is False:
