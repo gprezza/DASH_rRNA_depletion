@@ -40,11 +40,14 @@ show_offtargets = args.offtargets
 annotation_file = args.manual_ann
 PAM = args.pam.upper()
 
+ambiguous_alph = {"N":["A","C","G","T"], "V":["A","C","G"], "H":["A","C","T"], "D":["A","G","T"],
+	"B":["C","G","T"], "M":["A","C"], "K":["G","T"], "W":["A","T"], "S":["C","G"], "Y":["C","T"],
+	"R":["A","G"], "A": ["A"], "C": ["C"], "G": ["G"], "T": ["T"]}
+
 def remove_ambiguous(sequence):
-#returns a list of all possible sequences
-#given the ambiguous sequence input (e.g. with N,V, etc. bases)
-	d = Seq.IUPAC.IUPACData.ambiguous_dna_values
-	return ["".join(i) for i in product(*[ d[j] for j in sequence ]) ]
+	#returns a list of all possible sequences
+	#given the ambiguous sequence input (e.g. with N,V, etc. bases)
+	return ["".join(i) for i in product(*[ ambiguous_alph[j] for j in sequence ]) ]
 
 def revcomp(sequence):
 #returns reverse complement of sequence
