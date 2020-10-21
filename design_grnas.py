@@ -58,7 +58,7 @@ def revcomp(sequence):
 	string_list.reverse()
 	revcompl = ''
 	for base in string_list:
-		revcompl += complement[base]
+		revcompl += complement[base.upper()]
 	return revcompl
 
 def find_all(string, substr):
