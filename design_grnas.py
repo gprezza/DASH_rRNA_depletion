@@ -58,7 +58,7 @@ def revcomp(sequence):
 	string_list.reverse()
 	revcompl = ''
 	for base in string_list:
-		revcompl += complement[base.upper()]
+		revcompl += complement[base]
 	return revcompl
 
 def find_all(string, substr):
@@ -222,10 +222,10 @@ genome_seqs = {}
 for record in genome:
 	if "genome" in record.description: #if it's the main chromosome
 		genome_id = re.findall('[^ ]+', record.description)[0]
-		genome_seqs[genome_id] = str(record.seq)
+		genome_seqs[genome_id] = str(record.seq).upper()
 	else:
 		plasmid_id = re.findall('[^ ]+', record.description)[0]
-		genome_seqs["{0}".format(plasmid_id)] = str(record.seq)
+		genome_seqs["{0}".format(plasmid_id)] = str(record.seq).upper()
 		#adds the plasmids to the genome_seqs dictionary
 
 if annotation_file is False: #if a gff file is in the \annotations folder
