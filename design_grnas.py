@@ -102,6 +102,7 @@ def offtarget(list_of_PAMs):
 #checks if the offtarget is followed by a PAM
 #and if it's outside a rRNA gene.
 #If so, removes the spacer from guides_dict and returns 1.
+	n = 0
 	if any (genome_seqs[scaffold][start:end] == PAM for PAM in list_of_PAMs):
 		if scaffold in positions:
 			if not any(index in range(i,j+1) for [i, j] in positions[scaffold]):
@@ -110,12 +111,6 @@ def offtarget(list_of_PAMs):
 				n = 1
 				if show_offtargets == True:
 					print("\t".join(row))
-			else:
-				n = 0
-		else:
-			n = 0
-	else:
-		n = 0
 	return n
 
 def primer_heterodimer(oligo,ID):
