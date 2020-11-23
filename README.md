@@ -1,5 +1,7 @@
 # DASH_rRNA_depletion
-Python tool to design sgRNA pools targeting the rRNA genes. Example input and output files for *Salmonella* Typhimurium (gff annotation) and *Bacteroides thetaiotaomicron* (custom rRNA annotation with the "bt_rRNA.bed" file) are present in the "example_files" folder.
+Python tool to design sgRNA pools targeting the rRNA genes, as described in [this paper](https://rnajournal.cshlp.org/content/26/8/1069.long) (PMID: 32345633). 
+
+Example input and output files for *Salmonella* Typhimurium (gff annotation) and *Bacteroides thetaiotaomicron* (custom rRNA annotation with the "bt_rRNA.bed" file) are present in the "example_files" folder.
 
 ## Dependencies
 These Python (3.x) packages are required to run the script:
