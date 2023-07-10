@@ -4,12 +4,11 @@ Python tool to design sgRNA pools targeting the rRNA genes, as described in [thi
 Example input and output files for *Salmonella* Typhimurium (gff annotation) and *Bacteroides thetaiotaomicron* (custom rRNA annotation with the "bt_rRNA.bed" file) are present in the "example_files" folder.
 
 ## Dependencies
-These Python (3.x) packages are required to run the script:
-
-* Bio
-* primer3-py
-
-You'll also need to have [Bowtie](http://bowtie-bio.sourceforge.net/index.shtml) installed.
+Create a conda environment from the environment.yml file:
+```
+conda env create -f environment.yml
+```
+This will install all required dependencies.
 
 ## Usage
 ```
