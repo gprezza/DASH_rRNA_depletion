@@ -8,7 +8,7 @@ Create a conda environment from the environment.yml file:
 ```
 conda env create -f environment.yml
 ```
-This will install all required dependencies.
+This will install all required dependencies in an environment called "DASH".
 
 ## Usage
 ```
