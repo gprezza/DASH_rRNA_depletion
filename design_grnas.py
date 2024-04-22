@@ -178,7 +178,7 @@ if annotation_file is False:
 				gff_file.write(line)
 	gff_file.seek(0)
 
-regex_rrna = re.compile('\d*S') #matches rRNA name (5S, 16S, 23S)
+regex_rrna = re.compile("5S|16S|23S") #matches rRNA name (5S, 16S, 23S)
 
 PAM_length = len(PAM)
 
@@ -225,7 +225,7 @@ for record in genome:
 
 if annotation_file is False: #if a gff file is in the \annotations folder
 	for line in gff_file:
-		if line[0] != "#":
+		if line[0] != "#"  and line != "\n":
 			linelist = line.split("\t")
 			if linelist[2] == "rRNA":
 				ID = regex_rrna.findall(linelist[8])[0]
