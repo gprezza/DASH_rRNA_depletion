@@ -10,11 +10,20 @@ import argparse
 import primer3 #primer3-py package
 
 parser = argparse.ArgumentParser(description='Designs a pool of sgRNAs '
-								'targeting the ribosomal genes of a bacterial species.')
+								'targeting the ribosomal genes of a bacterial species.\n'
+								'Provide an annotation file with either the '
+								'--gff or --manual_ann options')
 								
 
 parser.add_argument('fasta_file', action='store',
 					help='Fasta file with the genome sequence')
+
+parser.add_argument('--gff', '-g', default=False, action='store',
+					help='GFF file with the genome annotation (Default: False).')
+
+parser.add_argument('--manual_ann', '-ma', default=False, action='store',
+					help='Use if you want to provide a file with the manual '
+					'annotation (in bed format, tab-separated) of the rRNA genes (Default: False).')
 
 parser.add_argument('--minGC', '-gc', default=30, type=int,
 					help='Minimal accepted GC%% of a spacer (Default: 30).')
@@ -27,13 +36,6 @@ parser.add_argument('--length', '-l', default=20, type=int,
 
 parser.add_argument('--offtargets', '-o', default=False, action='store_true',
 					help='Print the spacers that were discarded because of off-targeting.')
-
-parser.add_argument('--gff', '-g', default=False, action='store',
-					help='GFF file with the genome annotation.')
-
-parser.add_argument('--manual_ann', '-ma', default=False, action='store',
-					help='Use if you want to provide a file with the manual '
-					'annotation (in bed format, tab-separated) of the rRNA genes (Default: False).')
 
 parser.add_argument('--pam', '-p', default="NGG", type=str,
 					help='PAM sequence (Default: NGG).')
