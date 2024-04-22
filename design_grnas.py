@@ -11,11 +11,15 @@ import primer3 #primer3-py package
 
 parser = argparse.ArgumentParser(description='Designs a pool of sgRNAs '
 								'targeting the ribosomal genes of a bacterial species.')
+								
 
-parser.add_argument('--minGC', '-g', default=30, type=int,
+parser.add_argument('fasta_file', action='store',
+					help='Fasta file with the genome sequence')
+
+parser.add_argument('--minGC', '-gc', default=30, type=int,
 					help='Minimal accepted GC%% of a spacer (Default: 30).')
 
-parser.add_argument('--maxGC', '-G', default=80, type=int,
+parser.add_argument('--maxGC', '-GC', default=80, type=int,
 					help='Maximal accepted GC%% of a spacer (Default: 80).')
 
 parser.add_argument('--length', '-l', default=20, type=int,
@@ -23,6 +27,9 @@ parser.add_argument('--length', '-l', default=20, type=int,
 
 parser.add_argument('--offtargets', '-o', default=False, action='store_true',
 					help='Print the spacers that were discarded because of off-targeting.')
+
+parser.add_argument('--gff', '-g', default=False, action='store',
+					help='GFF file with the genome annotation.')
 
 parser.add_argument('--manual_ann', '-ma', default=False, action='store',
 					help='Use if you want to provide a file with the manual '
@@ -37,7 +44,9 @@ GC_low = args.minGC
 GC_high = args.maxGC
 guide_length = args.length
 show_offtargets = args.offtargets
-annotation_file = args.manual_ann
+gff_file = args.gff
+fasta_file = args.fasta_file
+bed_file = args.manual_ann
 PAM = args.pam.upper()
 
 ambiguous_alph = {"N":["A","C","G","T"], "V":["A","C","G"], "H":["A","C","T"], "D":["A","G","T"],
@@ -135,48 +144,10 @@ if os.path.isfile('bowtie.csv'):
 	os.remove('bowtie.csv')
 if os.path.isfile('grnas.fa'):
 	os.remove('grnas.fa')
-if os.path.isfile('reference_sequences/genome_sequence.fa'):
-	os.remove('reference_sequences/genome_sequence.fa')
 if os.path.isfile('input.fa'):
 	os.remove('input.fa')
-if os.path.isfile('annotations/annotation_file.gff'):
-	os.remove('annotations/annotation_file.gff')
-
-#check if all required files exist and create folders if needed:
-if annotation_file is False:
-	if len(os.listdir("annotations")) == 0:
-		print("No annotation file in the annotations folder! Did you mean "
-		"to use the --manual_ann argument?")
-		sys.exit()
-
 if not os.path.isdir('bowtie_files'):
 	os.mkdir('bowtie_files')
-
-
-if len(os.listdir("reference_sequences")) == 0:
-	print("No files are present in the reference_sequences "
-	"folder, exiting the script.")
-	sys.exit()
-
-#make a multifasta file with all sequences present in /reference_sequences
-genome_fa_file = open("reference_sequences/genome_sequence.fa",mode= "w+")
-for filename in os.listdir("reference_sequences"):
-	if filename != "genome_sequence.fa":
-		_file = open("reference_sequences/{0}".format(filename),mode= "r+")
-		for line in _file:
-			genome_fa_file.write(line)
-		genome_fa_file.write("\n")
-genome_fa_file.seek(0)
-
-#make a unique gff file with all files present in /annotations
-if annotation_file is False:
-	gff_file = open("annotations/annotation_file.gff",mode= "w+")
-	for filename in os.listdir("annotations"):
-		if filename != "annotation_file.gff":
-			_file = open("annotations/{0}".format(filename),mode= "r+")
-			for line in _file:
-				gff_file.write(line)
-	gff_file.seek(0)
 
 regex_rrna = re.compile("5S|16S|23S") #matches rRNA name (5S, 16S, 23S)
 
@@ -197,6 +168,13 @@ total_nt = 0 #total no. of nucleotides in the final oligo pool
 
 PAM_list = remove_ambiguous(PAM)
 
+if gff_file is False and bed_file is False:
+	sys.exit("No annotation file given. Please give one with the options --gff or --manual_ann")
+
+if " " in fasta_file:
+	sys.exit("The provided fasta file name contains a space character.\
+	This is not supported; please rename the file.")
+
 #create list of reverse complement of PAMs (for off-target analysis later)
 revcomp_PAM_list = []
 for PAM in PAM_list:
@@ -212,7 +190,7 @@ print("Looking for spacers.")
 #create genome_seqs dictionary with sequences of chromosome and plasmids,
 #"positions" dictionary with coordinates of all rRNA genes
 #and rRNA_genes dictionary with sequences of all rRNA genes:
-genome = SeqIO.parse(genome_fa_file, 'fasta')
+genome = SeqIO.parse(fasta_file, 'fasta')
 genome_seqs = {}
 for record in genome:
 	if "genome" in record.description: #if it's the main chromosome
@@ -223,9 +201,10 @@ for record in genome:
 		genome_seqs["{0}".format(plasmid_id)] = str(record.seq).upper()
 		#adds the plasmids to the genome_seqs dictionary
 
-if annotation_file is False: #if a gff file is in the \annotations folder
+if gff_file is not False: #if a gff file was provided
+	gff_file = open(gff_file,mode= "r")
 	for line in gff_file:
-		if line[0] != "#"  and line != "\n":
+		if line[0] != "#" and line != "\n":
 			linelist = line.split("\t")
 			if linelist[2] == "rRNA":
 				ID = regex_rrna.findall(linelist[8])[0]
@@ -239,8 +218,9 @@ if annotation_file is False: #if a gff file is in the \annotations folder
 				else:
 					seq = str(genome_seqs[scaffold][start:end])
 				rRNA_genes[ID].append(seq)
-else: #if a custom rRNA annotation was provided
-		annotation = open("{0}".format(annotation_file), "r")
+
+elif bed_file is not False: #if a custom rRNA annotation was provided
+		annotation = open(bed_file, "r")
 		reader = csv.reader(annotation, delimiter = "\t")
 		for line in reader:
 			scaffold = line[0]
@@ -323,7 +303,7 @@ with open('input.fa', 'w+') as f: #input file for bowtie
 
 #make bowtie indexes if not present:
 if not os.path.isfile('bowtie_files/*.ebwt'):
-	cmd = ("bowtie-build -r -q -f reference_sequences/genome_sequence.fa bowtie_files/genome_index"),
+	cmd = ("bowtie-build -r -q -f {0} bowtie_files/genome_index".format(fasta_file))
 	subprocess.call(cmd, shell=True, stderr=subprocess.DEVNULL)
 
 #run bowtie:
@@ -413,7 +393,4 @@ print("Done! Some (maybe) useful data:\n\n"
 "".format(total, len(invalid_GC), offtargeting, zero_G, one_G, two_G, total_nt))
 
 #cleanup
-os.remove("reference_sequences/genome_sequence.fa")
-if annotation_file is False:
-	os.remove("annotations/annotation_file.gff")
 os.remove("input.fa")
